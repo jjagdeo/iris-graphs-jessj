@@ -16,7 +16,8 @@ petal_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
   geom_point(aes(color = Species)) +
   theme_classic() +
   labs(x = "Petal Length Test Label", y = "Petal Width Example Label") +
-  facet_wrap(~Species)
+  facet_wrap(~Species) +
+  ggtitle("Jess and Alex's Pretty Flower Petal Graph")
 
 petal_scat
 ```
