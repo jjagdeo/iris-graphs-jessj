@@ -14,7 +14,9 @@ library(tidyverse)
 
 petal_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
   geom_point() +
-  theme_classic()
+  theme_classic() +
+  labs(x = "Petal Length Test Label", y = "Petal Width Example Label") +
+  facet_wrap(~Species)
 
 petal_scat
 ```
