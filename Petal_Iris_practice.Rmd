@@ -1,0 +1,20 @@
+---
+title: "Iris_Petal_Grap"
+author: "Alex Brown"
+date: "11/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+petal_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
+
+petal_scat
+```
+
